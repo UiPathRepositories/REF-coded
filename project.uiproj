@@ -2,5 +2,5 @@
   "Name": "REF-coded",
   "ProjectType": "Process",
   "Description": "Robotic Enterprise Framework",
-  "MainFile": "Main.xaml"
+  "MainFile": "Main.cs"
 }

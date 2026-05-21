@@ -2,7 +2,7 @@
   "name": "REF-coded",
   "projectId": "9c252a43-75e4-4065-8e37-718ca369e357",
   "description": "Robotic Enterprise Framework",
-  "main": "Main.xaml",
+  "main": "Main.cs",
   "dependencies": {
     "UiPath.Excel.Activities": "[3.5.1]",
     "UiPath.System.Activities": "[26.2.6]",
@@ -39,7 +39,25 @@
       "privateWorkflows": []
     },
     "processOptions": {
-      "ignoredFiles": []
+      "ignoredFiles": [
+        "_xaml_backup\\Main.xaml.bak",
+        "_xaml_backup\\Main.xaml.json.bak",
+        "_xaml_backup\\Framework\\KillAllProcesses.xaml.bak",
+        "_xaml_backup\\Framework\\InitAllSettings.xaml.bak",
+        "_xaml_backup\\Framework\\InitAllApplications.xaml.bak",
+        "_xaml_backup\\Framework\\GetTransactionData.xaml.bak",
+        "_xaml_backup\\Framework\\CloseAllApplications.xaml.bak",
+        "_xaml_backup\\Framework\\RetryCurrentTransaction.xaml.bak",
+        "_xaml_backup\\Framework\\Process.xaml.bak",
+        "_xaml_backup\\Framework\\SetTransactionStatus.xaml.bak",
+        "_xaml_backup\\Framework\\TakeScreenshot.xaml.bak",
+        "_xaml_backup\\Tests\\WorkflowTestCaseTemplate.xaml.bak",
+        "_xaml_backup\\Tests\\ProcessTestCase.xaml.bak",
+        "_xaml_backup\\Tests\\MainTestCase.xaml.bak",
+        "_xaml_backup\\Tests\\InitAllSettingsTestCase.xaml.bak",
+        "_xaml_backup\\Tests\\InitAllApplicationsTestCase.xaml.bak",
+        "_xaml_backup\\Tests\\GetTransactionDataTestCase.xaml.bak"
+      ]
     },
     "fileInfoCollection": [
       {
@@ -47,42 +65,54 @@
         "testCaseId": "7d4b8ddd-65b9-4ac3-87ff-773f91a28e99",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
-        "fileName": "Tests\\GetTransactionDataTestCase.xaml"
+        "publishAsTestCase": true,
+        "filePath": "GetTransactionDataTestCase.cs",
+        "fileName": "GetTransactionDataTestCase.cs"
       },
       {
         "editingStatus": "InProgress",
         "testCaseId": "7f668803-72b8-4a16-be53-e31500752c5c",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
-        "fileName": "Tests\\InitAllApplicationsTestCase.xaml"
+        "publishAsTestCase": true,
+        "filePath": "InitAllApplicationsTestCase.cs",
+        "fileName": "InitAllApplicationsTestCase.cs"
       },
       {
         "editingStatus": "InProgress",
         "testCaseId": "fff4e1a8-1253-43a8-ab5c-ede0855ba840",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
-        "fileName": "Tests\\InitAllSettingsTestCase.xaml"
+        "publishAsTestCase": true,
+        "filePath": "InitAllSettingsTestCase.cs",
+        "fileName": "InitAllSettingsTestCase.cs"
       },
       {
         "editingStatus": "InProgress",
         "testCaseId": "39895159-186e-48e4-ab19-4f269d5d2186",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
-        "fileName": "Tests\\MainTestCase.xaml"
+        "publishAsTestCase": true,
+        "filePath": "MainTestCase.cs",
+        "fileName": "MainTestCase.cs"
       },
       {
         "editingStatus": "InProgress",
         "testCaseId": "47b1db89-3d79-4561-90b8-fa2bbc9d3654",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
-        "fileName": "Tests\\ProcessTestCase.xaml"
+        "publishAsTestCase": true,
+        "filePath": "ProcessTestCase.cs",
+        "fileName": "ProcessTestCase.cs"
       },
       {
         "editingStatus": "InProgress",
         "testCaseId": "793bc9f9-a1b8-4bd0-8fda-32219edbbbb3",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
-        "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
+        "publishAsTestCase": true,
+        "filePath": "WorkflowTestCaseTemplate.cs",
+        "fileName": "WorkflowTestCaseTemplate.cs"
       }
     ],
     "saveToCloud": false
@@ -90,9 +120,20 @@
   "expressionLanguage": "CSharp",
   "entryPoints": [
     {
-      "filePath": "Main.xaml",
+      "filePath": "Main.cs",
       "uniqueId": "c89fe7df-7523-4790-b830-23e1b84cfe68",
-      "input": [],
+      "input": [
+        {
+          "name": "in_OrchestratorQueueName",
+          "type": "System.String",
+          "required": false
+        },
+        {
+          "name": "in_OrchestratorQueueFolder",
+          "type": "System.String",
+          "required": false
+        }
+      ],
       "output": []
     }
   ],
